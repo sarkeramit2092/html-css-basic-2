@@ -1,0 +1,26 @@
+-- white-space: nowrap;
+Prevents content from wrapping to the next line.
+
+All child elements stay on a single horizontal line.
+
+--- overflow-x: auto;
+Adds horizontal scrolling only if the content is wider than the container.
+
+No scroll if everything fits, but scroll appears automatically if needed.
+
+✅ What This Combo Does Together:
+Forces all child elements (like .products) to line up in a row.
+
+If there are too many items to fit, a horizontal scrollbar appears so you can scroll left/right.
+
+Example Scenario
+
+.content-right {
+    white-space: nowrap;
+    overflow-x: auto;
+}
+If .content-right has 10 inline-block items wider than the container:
+
+You’ll see all items in a single horizontal row.
+
+You can scroll horizontally to view items that don’t fit.
